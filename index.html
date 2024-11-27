@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="main-page" class="page">
+    <h1>Protem</h1>
+    <p>당신의 근육이 될 오늘의 단백질은?</p>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="검색어를 입력하세요...">
+        <button id="search-button">🔍</button>
+        <button id="random-button">🎲</button>
+    </div>
+</div>
+
+<div id="search-page" class="page" style="display:none;">
+    <h1>Protem</h1>
+    <p>당신의 근육이 될 오늘의 단백질은?</p>
+    <div class="search-container">
+        <input type="text" id="search-input-result" placeholder="검색어를 입력하세요...">
+        <button id="search-button-result">🔍</button>
+        <button id="random-button-result">🎲</button>
+    </div>
+    <div id="food-results" class="food-results"></div>
+</div>
+
+<div id="select-page" class="page" style="display:none;">
+    <h1>Protem</h1>
+    <p>당신의 근육이 될 오늘의 단백질은?</p>
+    <div class="search-container">
+        <input type="text" id="search-input-select" placeholder="검색어를 입력하세요...">
+        <button id="search-button-select">🔍</button>
+        <button id="random-button-select">🎲</button>
+    </div>
+    <div id="food-detail">
+        <h2 id="food-name"></h2>
+        <img id="food-image" src="" alt="Food Image">
+        <div id="nutrition-facts">
+            <h3>영양 성분</h3>
+            <p id="calories"></p>
+            <p id="protein"></p>
+            <p id="carbohydrates"></p>
+            <p id="fat"></p>
+        </div>
+        <p id="food-description"></p>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
